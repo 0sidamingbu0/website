@@ -1,0 +1,21 @@
+<Script   Language=VBScript   Runat=server>   
+  Sub   Application_OnStart   
+        Application("Online")=0   
+  End   Sub   
+    
+  Sub   Session_OnStart   
+          Application.Lock   
+          Application("Online")=Application("Online")+1   
+          Application.UnLock   
+  End   Sub   
+    
+  Sub   Session_OnEnd   
+          Application.Lock   
+          Application("Online")=Application("Online")-1   
+          Application.UnLock   
+  End   Sub   
+    
+  Sub   Application_OnEnd   
+    
+  End   Sub   
+  </Script>   

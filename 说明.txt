@@ -1,0 +1,3 @@
+20150916增加评论验证功能
+修改tiaozhuan.asp，增加验证码；
+增加tiaozhuanyanzheng.asp验证传过来的验证码进行数据库操作；
